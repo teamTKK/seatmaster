@@ -16,11 +16,86 @@
     <title>Тасалбар захиалгын Google</title>
   </head>
   <body>
-    <div class="w3-bar w3-blue">
-      <a href="#" class="w3-bar-item w3-button">Seatmaster</a>
-      <a href="#" class="w3-bar-item w3-button">Үзвэрийн газрууд</a>
-      <a href="#" class="w3-bar-item w3-button w3-right">Тусламж</a>
-      <a href="#" class="w3-bar-item w3-button w3-right">Нэвтрэх</a>
+    <div class="w3-display-container w3-blue" style="height: 350px">
+      <div class="w3-auto">
+        <!-- Энд navigation bar байрлана -->
+
+        <div class="w3-bar w3-padding w3-large">
+          <a class="w3-bar-item w3-button" href="index.html">LOGO</a>
+          <div class="w3-dropdown-click">
+            <button onclick="myFunction()" class="w3-button">
+              Үзвэрийн газрууд
+            </button>
+            <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
+              <ul class="w3-ul">
+                <li>МҮЭСТО</li>
+                <li>ТУСГААР ТОГТНОЛЫН ОРДОН</li>
+                <li>СОЁЛЫН ТӨВ ӨРГӨӨ</li>
+                <li>CROCUS EVENT HALL</li>
+                <li>CORPORATE CONVENTION CENTER</li>
+              </ul>
+            </div>
+          </div>
+          <button
+            onclick="document.getElementById('id01').style.display = 'block'"
+            class="w3-btn w3-right"
+          >
+            Нэвтрэх
+          </button>
+          <a class="w3-bar-item w3-button w3-right" href="#">Тусламж</a>
+        </div>
+
+        <!-- Нэвтрэх товч дарах үед доорх форм гарч ирнэ -->
+
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content w3-card-4">
+            <header class="w3-container w3-blue">
+              <span
+                onclick="document.getElementById('id01').style.display='none'"
+                class="w3-button w3-display-topright"
+                >&times;</span
+              >
+            </header>
+            <h2>Нэвтрэх</h2>
+            <form class="w3-container" action="/action_page.php">
+              <input class="w3-input" type="email" placeholder="E-mail" /><br />
+              <input
+                class="w3-input"
+                type="password"
+                placeholder="password"
+              /><br />
+              <button class="w3-button w3-blue">Нэвтрэх</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Энд nav bar дуусч байна -->
+
+        <!-- Энд хайх талбар байрлана -->
+        <div class="w3-display-middle">
+          <h1 class="w3-center" style="font-weight: bold">
+            ТАСАЛБАР ЗАХИАЛГЫН GOOGLE
+          </h1>
+          <input
+            class="w3-input"
+            type="search"
+            placeholder="Байршил, уран бүтээлч эсвэл тоглолтоор хайх"
+            style="height: 60px; background: url"
+          />
+        </div>
+        <!-- Энд хайх талбар дуусч байна -->
+      </div>
     </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("Demo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
   </body>
 </html>
