@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="/assets/icons/office-chair.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Тасалбар захиалгын Google</title>
   </head>
   <body>
@@ -48,7 +56,7 @@
         <!-- Нэвтрэх товч дарах үед доорх форм гарч ирнэ -->
 
         <div id="id01" class="w3-modal">
-          <div class="w3-modal-content w3-card-4">
+          <div class="w3-modal-content w3-card-4" style="width: 500px">
             <header class="w3-container w3-blue">
               <span
                 onclick="document.getElementById('id01').style.display='none'"
@@ -56,15 +64,42 @@
                 >&times;</span
               >
             </header>
-            <h2>Нэвтрэх</h2>
+
+            <div class="w3-container w3-text-black w3-center">
+              <h2>Нэвтрэх</h2>
+            </div>
             <form class="w3-container" action="/action_page.php">
-              <input class="w3-input" type="email" placeholder="E-mail" /><br />
-              <input
-                class="w3-input"
-                type="password"
-                placeholder="password"
-              /><br />
-              <button class="w3-button w3-blue">Нэвтрэх</button>
+              <p>
+                <label class="w3-text-black w3-center"
+                  ><b>Username or E-mail</b></label
+                >
+                <input
+                  class="w3-input w3-border w3-round-large"
+                  name="first"
+                  type="text"
+                />
+              </p>
+              <p>
+                <label class="w3-text-black w3-center"><b>Password</b></label>
+                <input
+                  class="w3-input w3-border w3-round-large"
+                  name="last"
+                  type="password"
+                />
+              </p>
+              <p>
+                <button class="w3-btn w3-blue w3-block w3-round-large">
+                  Нэвтрэх
+                </button>
+              </p>
+              <p>
+                <button class="w3-btn w3-blue w3-block w3-round-large">
+                  Sign in with Facebook
+                </button>
+              </p>
+              <p>
+                <a href="#">Нууц үгээ мартсан</a>
+              </p>
             </form>
           </div>
         </div>
@@ -85,6 +120,198 @@
         </div>
         <!-- Энд хайх талбар дуусч байна -->
       </div>
+    </div>
+
+    <div class="w3-auto">
+      <!-- эндээс гол агуулга эхэлнэ -->
+      <div class="w3-row-padding w3-margin-top">
+        <div class="w3-col s4">
+          <div
+            class="w3-display-container w3-panel w3-round-large"
+            style="width: 100%; height: 220px; background-color: #5c20e8"
+          >
+            <img
+              class="w3-display-middle"
+              src="./assets/images/concert.png"
+              alt=""
+              style="width: 200px; height: auto"
+            />
+            <div class="w3-display-bottommiddle w3-text-white w3-padding">
+              <h4>КОНЦЕРТ</h4>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col s4">
+          <div
+            class="w3-display-container w3-panel w3-round-large"
+            style="width: 100%; height: 220px; background-color: #ab1212"
+          >
+            <img
+              class="w3-display-middle"
+              src="./assets/images/opera.png"
+              alt=""
+              style="width: 200px; height: auto"
+            />
+            <div class="w3-display-bottommiddle w3-text-white w3-padding">
+              <h4>ДУУРЬ</h4>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col s4">
+          <div
+            class="w3-display-container w3-panel w3-round-large"
+            style="width: 100%; height: 220px; background-color: #914aff"
+          >
+            <img
+              class="w3-display-middle"
+              src="./assets/images/drama.png"
+              alt=""
+              style="width: 200px; height: auto"
+            />
+            <div class="w3-display-bottommiddle w3-text-white w3-padding">
+              <h4>ЖҮЖИГ</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-row-padding">
+        <div class="w3-col s4">
+          <div
+            class="w3-display-container w3-panel w3-round-large"
+            style="width: 100%; height: 220px; background-color: #31bbf8"
+          >
+            <img
+              class="w3-display-middle"
+              src="./assets/images/ballet.png"
+              alt=""
+              style="width: 200px; height: auto"
+            />
+            <div class="w3-display-bottommiddle w3-text-white w3-padding">
+              <h4>БАЛЛЕТ</h4>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col s4">
+          <div
+            class="w3-display-container w3-panel w3-round-large"
+            style="width: 100%; height: 220px; background-color: #fe0606"
+          >
+            <img
+              class="w3-display-middle"
+              src="./assets/images/comedy.png"
+              alt=""
+              style="width: 200px; height: auto"
+            />
+            <div class="w3-display-bottommiddle w3-text-white w3-padding">
+              <h4>КОМЕДИ</h4>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col s4">
+          <div
+            class="w3-display-container w3-panel w3-round-large"
+            style="width: 100%; height: 220px; background-color: #dbd7d7"
+          >
+            <img
+              class="w3-display-middle"
+              src="./assets/images/sport.png"
+              alt=""
+              style="width: 200px; height: auto"
+            />
+            <div class="w3-display-bottommiddle w3-text-white w3-padding">
+              <h4>СПОРТ</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row-padding">
+        <div class="w3-col s4">
+          <div
+            class="w3-display-container w3-panel w3-round-large"
+            style="width: 100%; height: 220px; background-color: #1c43af"
+          >
+            <img
+              class="w3-display-middle"
+              src="./assets/images/others.png"
+              alt=""
+              style="width: 200px; height: auto"
+            />
+            <div class="w3-display-bottommiddle w3-text-white w3-padding">
+              <h4>БУСАД</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <footer class="w3-padding-64 w3-small w3-center" id="footer">
+        <div class="w3-row-padding">
+          <div class="w3-col s4">
+            <h4>САНАЛ ХҮСЭЛТ</h4>
+            <form action="/action_page.php" target="_blank">
+              <p>
+                <input
+                  class="w3-input w3-border w3-round-large"
+                  type="text"
+                  placeholder="И-Мейл"
+                  name="Email"
+                  required
+                />
+              </p>
+              <p>
+                <input
+                  class="w3-input w3-border w3-round-large"
+                  type="text"
+                  placeholder="Утасны дугаар"
+                  name="Subject"
+                  required
+                />
+              </p>
+              <p>
+                <input
+                  class="w3-input w3-border w3-round-large"
+                  type="text"
+                  placeholder="Санал хүсэлт"
+                  name="Message"
+                  required
+                />
+              </p>
+              <button
+                type="submit"
+                class="w3-button w3-block w3-blue w3-round-large"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+
+          <div class="w3-col s4">
+            <h4>ТУСЛАМЖ</h4>
+            <p><a href="#">Бидний тухай</a></p>
+            <p><a href="#">Тасалбар зарах</a></p>
+            <p><a href="#">Хэвлэл мэдээлэл</a></p>
+            <p><a href="#">Сайтын нөхцөл</a></p>
+            <p><a href="#">Бүтэц зохион байгуулалт</a></p>
+            <p><a href="#">Заавар</a></p>
+            <p><a href="#">Site map</a></p>
+          </div>
+
+          <div class="w3-col s4 w3-justify">
+            <h4>Манай баг</h4>
+            <p><i class="fa fa-fw fa-map-marker"></i>Хөгжүүлэгчид</p>
+            <p><i class="fa fa-fw fa-phone"></i> Зураг</p>
+            <br />
+            <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+            <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+            <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+            <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+            <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script>
