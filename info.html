@@ -24,7 +24,16 @@
     <title>Тасалбар захиалгын Google</title>
   </head>
   <body>
-    <div class="w3-display-container w3-blue" style="height: 350px">
+    <div
+      class="w3-display-container w3-margin-bottom"
+      style="
+        height: 600px;
+        background-image: url('./assets/images/Untitled\ design\ \(2\).png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      "
+    >
       <div class="w3-auto">
         <!-- Энд navigation bar байрлана -->
 
@@ -104,160 +113,153 @@
 
         <!-- Энд nav bar дуусч байна -->
 
-        <!-- Энд хайх талбар байрлана -->
-        <div class="w3-display-middle">
-          <h1 class="w3-center" style="font-weight: bold">
-            ТАСАЛБАР ЗАХИАЛГЫН GOOGLE
-          </h1>
-          <input
-            class="w3-input"
-            type="search"
-            placeholder="Байршил, уран бүтээлч эсвэл тоглолтоор хайх"
-            style="height: 60px; background: url"
+        <div
+          class="w3-content w3-section"
+          style="max-width: 1000px; height: 400px"
+        >
+          <img
+            class="mySlides"
+            src="./assets/images/bethoven.jpg"
+            style="width: 100%"
           />
         </div>
-        <!-- Энд хайх талбар дуусч байна -->
       </div>
     </div>
 
+    <!-- Гол агуулга эндээс эхэлж байна -->
+
+    <div class="w3-content w3-margin-top" style="max-width: 1400px">
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+        <!-- Left Column -->
+        <div class="w3-third">
+          <div class="w3-white w3-text-grey w3-card-4">
+            <iframe
+              style="width: 100%; height: 300px"
+              src="https://www.youtube.com/embed/4Tr0otuiQuU"
+            >
+            </iframe>
+          </div>
+          <h4 style="font-weight: bold">Үзвэрийн хуваарь</h4>
+
+          <div
+            class="w3-display-container w3-border w3-round-large w3-margin-bottom"
+            style="width: 100%; height: 40px"
+          >
+            <span class="w3-display-left" style="font-weight: 600"
+              >2021/09/01</span
+            >
+            <span class="w3-display-middle" style="font-weight: 600"
+              >17:00</span
+            >
+            <button
+              onclick="myFunc()"
+              class="w3-button w3-blue w3-display-right w3-round-large"
+            >
+              Захиалах
+            </button>
+          </div>
+          <div
+            class="w3-display-container w3-border w3-round-large w3-margin-bottom"
+            style="width: 100%; height: 40px"
+          >
+            <span class="w3-display-left" style="font-weight: 600"
+              >2021/09/01</span
+            >
+            <span class="w3-display-middle" style="font-weight: 600"
+              >17:00</span
+            >
+            <button class="w3-button w3-blue w3-display-right w3-round-large">
+              Захиалах
+            </button>
+          </div>
+          <div
+            class="w3-display-container w3-border w3-round-large w3-margin-bottom"
+            style="width: 100%; height: 40px"
+          >
+            <span class="w3-display-left" style="font-weight: 600"
+              >2021/09/01</span
+            >
+            <span class="w3-display-middle" style="font-weight: 600"
+              >17:00</span
+            >
+            <button class="w3-button w3-blue w3-display-right w3-round-large">
+              Захиалах
+            </button>
+          </div>
+          <br />
+
+          <h4 style="font-weight: bold">Байршил</h4>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21391.34370613183!2d106.91986922266148!3d47.91862478311584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x14c717641ae57c48!2sState%20Opera%20and%20Ballet%20Academic%20Theatre!5e0!3m2!1sen!2smn!4v1607919916275!5m2!1sen!2smn"
+            width="100%"
+            height="450"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+
+          <!-- End Left Column -->
+        </div>
+
+        <!-- Right Column -->
+        <div class="w3-twothird">
+          <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <h2 class="w3-text-grey w3-padding-16">
+              <i
+                class="fa fa-home fa-fw w3-margin-right w3-xxlarge w3-text-blue"
+              ></i>
+              Бетховен-250 тоглолт
+            </h2>
+            <div class="w3-container">
+              <p>Хаана: Улсын дуурь бүжгийн эрдмийн теарт</p>
+              <p>Хэзээ: 2021 оны 9 сарын 1</p>
+              <p>Зохион байгуулагч: Улсын дуурь бүжгийн эрдмийн театр</p>
+              <p>Тоглолтын төрөл: Хөгжим</p>
+              <p>Үргэлжлэх хугацаа: 90 минут</p>
+              <p>Насны ангилал: +7</p>
+              <hr />
+              <p>Тасалбарын үнэ</p>
+              <p>30'000₮</p>
+              <p>40'000₮</p>
+              <p>50'000₮</p>
+            </div>
+          </div>
+
+          <div class="w3-container w3-card w3-white">
+            <h2 class="w3-text-grey w3-padding-16">
+              <i
+                class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue"
+              ></i
+              >Дэлгэрэнгүй мэдээлэл
+            </h2>
+            <div class="w3-container">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum
+              <hr />
+            </div>
+          </div>
+
+          <!-- End Right Column -->
+        </div>
+
+        <!-- End Grid -->
+      </div>
+
+      <!-- End Page Container -->
+    </div>
+
     <div class="w3-auto">
-      <!-- эндээс гол агуулга эхэлнэ -->
-      <div class="w3-row-padding w3-margin-top">
-        <div class="w3-col s4">
-          <a href="./tickets.html"
-            ><div
-              class="w3-display-container w3-panel w3-round-large"
-              style="width: 100%; height: 220px; background-color: #5c20e8"
-            >
-              <img
-                class="w3-display-middle"
-                src="./assets/images/concert.png"
-                alt=""
-                style="width: 200px; height: auto"
-              />
-              <div class="w3-display-bottommiddle w3-text-white w3-padding">
-                <h4>КОНЦЕРТ</h4>
-              </div>
-            </div></a
-          >
-        </div>
-        <div class="w3-col s4">
-          <a href="#"
-            ><div
-              class="w3-display-container w3-panel w3-round-large"
-              style="width: 100%; height: 220px; background-color: #ab1212"
-            >
-              <img
-                class="w3-display-middle"
-                src="./assets/images/opera.png"
-                alt=""
-                style="width: 200px; height: auto"
-              />
-              <div class="w3-display-bottommiddle w3-text-white w3-padding">
-                <h4>ДУУРЬ</h4>
-              </div>
-            </div></a
-          >
-        </div>
-        <div class="w3-col s4">
-          <a href="#">
-            <div
-              class="w3-display-container w3-panel w3-round-large"
-              style="width: 100%; height: 220px; background-color: #914aff"
-            >
-              <img
-                class="w3-display-middle"
-                src="./assets/images/drama.png"
-                alt=""
-                style="width: 200px; height: auto"
-              />
-              <div class="w3-display-bottommiddle w3-text-white w3-padding">
-                <h4>ЖҮЖИГ</h4>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="w3-row-padding">
-        <div class="w3-col s4">
-          <a href="#">
-            <div
-              class="w3-display-container w3-panel w3-round-large"
-              style="width: 100%; height: 220px; background-color: #31bbf8"
-            >
-              <img
-                class="w3-display-middle"
-                src="./assets/images/ballet.png"
-                alt=""
-                style="width: 200px; height: auto"
-              />
-              <div class="w3-display-bottommiddle w3-text-white w3-padding">
-                <h4>БАЛЛЕТ</h4>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="w3-col s4">
-          <a href="#">
-            <div
-              class="w3-display-container w3-panel w3-round-large"
-              style="width: 100%; height: 220px; background-color: #fe0606"
-            >
-              <img
-                class="w3-display-middle"
-                src="./assets/images/comedy.png"
-                alt=""
-                style="width: 200px; height: auto"
-              />
-              <div class="w3-display-bottommiddle w3-text-white w3-padding">
-                <h4>КОМЕДИ</h4>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="w3-col s4">
-          <a href="#">
-            <div
-              class="w3-display-container w3-panel w3-round-large"
-              style="width: 100%; height: 220px; background-color: #dbd7d7"
-            >
-              <img
-                class="w3-display-middle"
-                src="./assets/images/sport.png"
-                alt=""
-                style="width: 200px; height: auto"
-              />
-              <div class="w3-display-bottommiddle w3-text-white w3-padding">
-                <h4>СПОРТ</h4>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="w3-row-padding">
-        <div class="w3-col s4">
-          <a href="#">
-            <div
-              class="w3-display-container w3-panel w3-round-large"
-              style="width: 100%; height: 220px; background-color: #1c43af"
-            >
-              <img
-                class="w3-display-middle"
-                src="./assets/images/others.png"
-                alt=""
-                style="width: 200px; height: auto"
-              />
-              <div class="w3-display-bottommiddle w3-text-white w3-padding">
-                <h4>БУСАД</h4>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <hr />
-
       <footer class="w3-padding-64 w3-small w3-center" id="footer">
         <div class="w3-row-padding">
           <div class="w3-col s4">
@@ -325,7 +327,10 @@
         </div>
       </footer>
     </div>
-
-    <script></script>
+    <script>
+      function myFunc() {
+        window.location.href = "./book.html";
+      }
+    </script>
   </body>
 </html>
