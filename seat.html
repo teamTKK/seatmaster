@@ -23,5 +23,94 @@
     />
     <title>Тасалбар захиалгын Google</title>
   </head>
-  <body></body>
+  <body>
+    <div class="w3-display-container w3-blue" style="height: 350px">
+      <div class="w3-auto">
+        <!-- Энд navigation bar байрлана -->
+
+        <div class="w3-bar w3-padding w3-large">
+          <a class="w3-bar-item w3-button" href="index.html">LOGO</a>
+          <div class="w3-dropdown-hover">
+            <button class="w3-button">Үзвэрийн газрууд</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+              <ul class="w3-ul">
+                <li>МҮЭСТО</li>
+                <li>ТУСГААР ТОГТНОЛЫН ОРДОН</li>
+                <li>СОЁЛЫН ТӨВ ӨРГӨӨ</li>
+                <li>CROCUS EVENT HALL</li>
+                <li>CORPORATE CONVENTION CENTER</li>
+              </ul>
+            </div>
+          </div>
+          <button
+            onclick="document.getElementById('id01').style.display = 'block'"
+            class="w3-btn w3-right"
+          >
+            Нэвтрэх
+          </button>
+          <a class="w3-bar-item w3-button w3-right" href="#">Тусламж</a>
+        </div>
+
+        <!-- Нэвтрэх товч дарах үед доорх форм гарч ирнэ -->
+
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content w3-card-4" style="width: 400px">
+            <header class="w3-container w3-blue">
+              <span
+                onclick="document.getElementById('id01').style.display='none'"
+                class="w3-button w3-display-topright"
+                >&times;</span
+              >
+            </header>
+
+            <div class="w3-container w3-text-black w3-center">
+              <h2>Нэвтрэх</h2>
+            </div>
+            <form class="w3-container" action="/action_page.php">
+              <p>
+                <label class="w3-text-black w3-center"
+                  ><b>Username or E-mail</b></label
+                >
+                <input
+                  class="w3-input w3-border w3-round-large"
+                  name="first"
+                  type="text"
+                />
+              </p>
+              <p>
+                <label class="w3-text-black w3-center"><b>Password</b></label>
+                <input
+                  class="w3-input w3-border w3-round-large"
+                  name="last"
+                  type="password"
+                />
+              </p>
+              <p>
+                <button class="w3-btn w3-blue w3-block w3-round-large">
+                  Нэвтрэх
+                </button>
+              </p>
+              <p>
+                <button class="w3-btn w3-blue w3-block w3-round-large">
+                  Sign in with Facebook
+                </button>
+              </p>
+              <p>
+                <a href="#">Нууц үгээ мартсан</a>
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <!-- Энд nav bar дуусч байна -->
+
+        <a href="info.html" style="text-decoration: none"
+          ><i class="fa fa-arrow-left"></i> Буцах</a
+        >
+        <div class="w3-container w3-xlarge" style="font-weight: bold">
+          Захиалга
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
