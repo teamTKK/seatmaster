@@ -111,16 +111,14 @@
           Захиалга
         </div>
         <div class="w3-row w3-blue w3-margin w3-center">
+          <div class="w3-col w3-container" style="width: 12%">Нэвтрэх</div>
+          <div class="w3-col w3-container" style="width: 28%">
+            <hr />
+          </div>
           <div
             class="w3-col w3-container"
             style="width: 12%; font-weight: bold"
           >
-            Нэвтрэх
-          </div>
-          <div class="w3-col w3-container" style="width: 28%">
-            <hr />
-          </div>
-          <div class="w3-col w3-container" style="width: 12%">
             Захиалга батлах
           </div>
           <div class="w3-col w3-container" style="width: 28%">
@@ -130,6 +128,10 @@
         </div>
       </div>
     </div>
+
+    <!-- Энд header хэсэг дуусч байна -->
+
+    <!-- Эндээс их бие эхэлнэ -->
 
     <!-- Page Container -->
     <div class="w3-content w3-margin-top" style="max-width: 1400px">
@@ -182,48 +184,42 @@
 
         <!-- Right Column -->
         <div class="w3-twothird">
-          <!-- End Right Column -->
-          <div class="w3-large w3-margin w3-center">
-            Нэвтрэх эсвэл бүртгүүлэх
+          <div class="w3-container w3-center">
+            <div class="w3-large w3-margin">Төлбөрийн нөхцөл</div>
+            <p>
+              <button
+                class="w3-btn w3-blue w3-round-xxlarge"
+                style="width: 40%"
+              >
+                Банкны карт
+              </button>
+            </p>
+            <p>
+              <button
+                class="w3-btn w3-blue w3-round-xxlarge"
+                style="width: 40%"
+              >
+                QPAY
+              </button>
+            </p>
+            <p>
+              <button
+                class="w3-btn w3-blue w3-round-xxlarge"
+                style="width: 40%"
+              >
+                MONPAY
+              </button>
+            </p>
+            <p>
+              <button
+                class="w3-btn w3-blue w3-round-xxlarge"
+                style="width: 40%"
+              >
+                CANDY
+              </button>
+            </p>
           </div>
-          <form class="w3-container">
-            <p>
-              <input
-                class="w3-radio"
-                type="radio"
-                name="newaccount"
-                value="Шинэ хаяг нээх"
-              />
-              <label>Шинэ хаяг нээх</label>
-            </p>
-            <p>
-              <input
-                class="w3-radio"
-                type="radio"
-                name="login"
-                value="Нэвтэрч орох"
-              />
-              <label>Нэвтэрч орох</label>
-            </p>
-            <p>
-              <input
-                class="w3-input w3-border w3-round-xxlarge"
-                name="email"
-                placeholder="И-Мейл хаягаа оруулна уу"
-                type="email"
-                style="width: 50%"
-              />
-            </p>
-          </form>
-          <p>
-            <button
-              onclick="toPayment()"
-              class="w3-btn w3-blue w3-round-xxlarge"
-              style="width: 50%"
-            >
-              Үргэлжлүүлэх
-            </button>
-          </p>
+          <!-- End Right Column -->
         </div>
 
         <!-- End Grid -->
@@ -231,10 +227,5 @@
 
       <!-- End Page Container -->
     </div>
-    <script>
-      function toPayment() {
-        window.location.href = "./payment.html";
-      }
-    </script>
   </body>
 </html>
